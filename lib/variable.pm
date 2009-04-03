@@ -1,21 +1,15 @@
 package variable;
 
-#
-# $Id: variable.pm,v 1.1 2000/05/31 19:38:56 abigail Exp $
-#
-# $Log: variable.pm,v $
-# Revision 1.1  2000/05/31 19:38:56  abigail
-# Initial revision.
-#
-
 require 5.6.0;
 
 use strict;
 use warnings::register;
+use warnings;
+no  warnings 'syntax';
 
-use vars qw /%declared $VERSION/;
 
-($VERSION) = '$Revision: 1.1 $' =~ /([\d.]+)/;
+our $VERSION = '2009040301';
+our %declared;
 
 sub croak {
     require Carp;
@@ -192,23 +186,36 @@ C<< => >> operator quotes a bareword immediately to its left,
 you have to say C<< variable () => 'value' >> (or simple use a comma
 in place of the big arrow) instead of C<< variable => 'value' >>
 
-=head1 REVISION HISTORY
-
-    $Log: variable.pm,v $
-    Revision 1.1  2000/05/31 19:38:56  abigail
-    Initial revision.
-
+=head1 DEVELOPMENT
+ 
+The current sources of this module are found on github,
+L<< git://github.com/Abigail/variable.git >>.
 
 =head1 AUTHOR
 
-This package was written by Abigail, <abigail@delanet.com>.
+This package was written by Abigail, L<< cpan@abigail.be >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-This package is copyright 2000 by Abigail.
+Copyright (C) 2000, 2009, Abigail
 
-This program is free and open software. You can redistribute it or
-modify it under the same terms as Perl itself.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 =head1 THANKS
 
