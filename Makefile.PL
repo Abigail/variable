@@ -4,5 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'variable',
     'VERSION_FROM'	=> 'lib/variable.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+        Carp  =>  0,
+     }, # e.g., Module::Name => 1.1
 );
