@@ -1,6 +1,6 @@
 package variable;
 
-require 5.6.0;
+require 5.006;
 
 use strict;
 use warnings::register;
