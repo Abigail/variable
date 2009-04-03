@@ -1,4 +1,4 @@
 MANIFEST
 Makefile.PL
-test.pl
-variable.pm
+t/000_tests.t
+lib/variable.pm
