@@ -2,3 +2,5 @@ MANIFEST
 Makefile.PL
 t/000_tests.t
 lib/variable.pm
+Changes
+README

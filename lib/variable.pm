@@ -8,7 +8,7 @@ use warnings;
 no  warnings 'syntax';
 
 
-our $VERSION = '2009040301';
+our $VERSION = '2009081101';
 our %declared;
 
 sub croak {
