@@ -25,9 +25,10 @@ my %args = (
     VERSION_FROM         => $LIB_FILE,
     ABSTRACT_FROM        => $LIB_FILE,
     PREREQ_PM            => {
-        'Lingua::EN::Numbers'   => 1.01,
+        'Carp'                  => 0,
         'warnings'              => 0,
         'strict'                => 0,
+        'warnings::register'    => 0,
     },
     MIN_PERL_VERSION     =>  5.006,
     AUTHOR               => "$ME <$LOCAL_ADDR\@$DOMAIN>",
